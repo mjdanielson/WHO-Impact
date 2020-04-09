@@ -1,0 +1,70 @@
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+  }
+
+  #map {
+    height: 100vh;
+  }
+  
+  .controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .controls-toggle{
+    display: none;
+  }
+  
+  .menu-control {
+    fill: #fff;
+    margin: 25px;
+  }
+
+
+  .menu {
+    background-color: rgba(7,34,53,1);
+    bottom: 0;
+    left: 0;
+    top: 0;
+    opacity: .7;
+    overflow-y: scroll;
+    padding: 30px 50px;
+    position: absolute;
+    transition: all 0.35s ease-in-out;
+    transform: translateX(0%);
+    z-index: -10;
+  }
+
+
+
+  .menu-open {
+    transform: translateX(0%);
+    opacity: .9;
+    z-index: 10;
+  }
+
+
+  .menu p, .menu p:focus, .menu p:visited {
+    color: white;
+    /* display: block; */
+    font-size: 16px;
+    margin: 5px auto;
+    text-align: left;
+    text-decoration: none;
+  }
+
+  .menu a, .menu a:focus, .menu a:visited {
+    color: white;
+    display: block; 
+    font-size: 17px;
+    margin: 25px auto;
+    text-align: left;
+    text-decoration: none;
+  }
+
+
+  .menu-close {
+    background-color: white;
+  }
